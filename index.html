@@ -13,7 +13,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <script
       src="https://kit.fontawesome.com/7a70d5c651.js"
       crossorigin="anonymous"
@@ -30,10 +29,20 @@
         <!-- Search bar -->
 
         <!-- The form -->
-        <form class="search_bar" action="action_page.php">
-          <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+          </div>
+        </div>
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <form class="search_bar" action=""></form>
 
         <!-- Icons -->
         <ul class="navbar-nav d-flex flex-row me-1">
@@ -114,7 +123,9 @@
           <div id="samplechat" class="samplechat">
             What are you craving today?
           </div>
-          <div class="chatbox" id="chatbox">Time to eat.</div>
+          <div class="chatbox" id="chatbox">
+            Click below to start the conversation!
+          </div>
           <img
             src="images/lenny.png"
             alt=""
@@ -147,6 +158,23 @@
     <script
       src="https://mediafiles.botpress.cloud/a64c347b-ccff-4ba3-851e-98dfb98a58a7/webchat/config.js"
       defer
+    ></script>
+
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js%22%3E"></script>
+    <script>
+      window.botpressWebChat.init({
+        botId: "a64c347b-ccff-4ba3-851e-98dfb98a58a7",
+        hostUrl: "https://cdn.botpress.cloud/webchat/v0",
+        messagingUrl: "https://messaging.botpress.cloud/",
+        clientId: "a64c347b-ccff-4ba3-851e-98dfb98a58a7",
+        botName: "food-gpt",
+        botAvatarUrl: "images/lenny.png",
+      });
+    </script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
     ></script>
 
     <script src="script.js"></script>

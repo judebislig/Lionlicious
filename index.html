@@ -29,20 +29,41 @@
         <!-- Search bar -->
 
         <!-- The form -->
-
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1"> I have a bike</label><br />
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1"> I have a bike</label><br />
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1"> I have a bike</label><br />
+        <div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              Search Preferences
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <form action="" method="POST">
+                <input
+                  type="checkbox"
+                  id="choice1"
+                  name="choice1"
+                  value="Hidden"
+                />
+                <label for="choice1">Hidden Gems</label><br />
+                <input
+                  type="checkbox"
+                  id="choice2"
+                  name="choice2"
+                  value="Savory"
+                />
+                <label for="choice2">Savory</label><br />
+                <input
+                  type="checkbox"
+                  id="choice3"
+                  name="choice3"
+                  value="Cold"
+                />
+                <label for="choice3">Cold Foods</label><br />
+                <input type="submit" value="Submit " class="btn" /><i
+                  class="fa fa-search"
+                ></i>
+              </form>
+            </div>
           </div>
         </div>
-        <button type="submit"><i class="fa fa-search"></i></button>
-        <form class="search_bar" action=""></form>
 
         <!-- Icons -->
         <ul class="navbar-nav d-flex flex-row me-1">

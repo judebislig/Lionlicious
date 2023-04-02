@@ -240,17 +240,20 @@ form.search_bar::after {
 }
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #e8e8e8;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
+    width: 50vw;
+    text-align: left;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #cdba3e;
+    background-color: #c6c6c6;
 }
 
 .dropdown {
@@ -266,6 +269,8 @@ form.search_bar::after {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .dropdown-content a {
